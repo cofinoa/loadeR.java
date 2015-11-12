@@ -3,9 +3,9 @@ Depends:
     rJava,
     R(>= 3.0.0)
 Type: Package
-Title: Loader of the netCDF Java library in R
+Title: Loader of the NetCDF Java Library in R
 Version: 1.0-0
-Date: 12 Nov 2015
+Date: 2015-11-12
 Authors@R: as.person(c(
     "Santander Meteorology Group <http://meteo.unican.es> [aut]",
     "Joaquin Bedia <bediaj@unican.es> [ctb, cre]",
