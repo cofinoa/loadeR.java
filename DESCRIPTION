@@ -1,0 +1,20 @@
+Package: loadeR.java
+Depends:
+    rJava,
+    R(>= 3.0.0)
+Type: Package
+Title: Loader of the netCDF Java library in R
+Version: 1.0-0
+Date: 12 Nov 2015
+Authors@R: as.person(c(
+    "Santander Meteorology Group <http://meteo.unican.es> [aut]",
+    "Joaquin Bedia <bediaj@unican.es> [ctb, cre]",
+    "Antonio Cofino <antonio.cofino@unican.es> [ctb]",
+    "Max Tuni <max@predictia.es> [ctb]",
+    "Manuel Vega <manuel.vega@unican.es> [ctb]"
+    ))
+Maintainer: Joaquin Bedia <bediaj@unican.es>
+BugReports: https://github.com/SantanderMetGroup/loadeR.java/issues
+Description: Initializes a modified version of the Unidata's NetCDF Java Library
+    that implements the full CDM model, including all other .jar dependencies. 
+License: GPL(>=3) + file LICENSE
