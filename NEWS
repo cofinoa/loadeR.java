@@ -1,0 +1,8 @@
+# NEWS
+
+## v1.0-0 (12 Nov 2015)
+ * In-house netCDF-Java version for http authentication
+## v1.1-0 (12 Feb 2016)
+ *Automatic check of the java version used by R on attach. A warning is given for versions under 1.7x
+## v1.1.1 (26 Apr 2018)
+ * Update java version checker to comply with java >=9  (See Issue loadeR#33 https://github.com/SantanderMetGroup/loadeR/issues/33)
