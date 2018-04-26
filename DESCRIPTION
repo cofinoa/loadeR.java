@@ -1,6 +1,6 @@
 Package: loadeR.java
 Depends:
-    rJava,
+    rJava(>= 0.9-8),
     R(>= 3.1.0)
 Type: Package
 Title: Loader of the NetCDF Java Library in R
