@@ -1,9 +1,9 @@
 .onAttach <- function(...) {
-      jversion <- .jcall("java/lang/System", "S", "getProperty", "java.runtime.version")
+      jversion <- .jcall("java/lang/System", "S", "getProperty", "java.specification.version")
       jarch <- .jcall("java/lang/System", "S", "getProperty", "os.arch")
       jvendor <- .jcall("java/lang/System", "S", "getProperty", "java.vendor")
       packageStartupMessage("Java version ", jversion, " ",jarch, " by ", jvendor, " detected")
-      if (as.integer(substr(jversion, 3, 3)) < 7) {
+      if (as.numeric(jversion) < 1.7) {
             packageStartupMessage("WARNING: Java versions under 1.7x not supported by the netCDF API. Please upgrade\n<https://github.com/SantanderMetGroup/loadeR/wiki/installation>.")
       } else {
             packageStartupMessage("NetCDF Java Library v4.6.0-SNAPSHOT (23 Apr 2015) loaded and ready")
