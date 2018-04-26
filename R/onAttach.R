@@ -1,3 +1,5 @@
+#' @importFrom rJava .jcall J
+
 .onAttach <- function(...) {
     jversion <- .jcall("java/lang/System", "S", "getProperty", "java.specification.version")
     jarch <- .jcall("java/lang/System", "S", "getProperty", "os.arch")
